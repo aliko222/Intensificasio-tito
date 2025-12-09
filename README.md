@@ -1,6 +1,9 @@
 # Intensificasio-tito
 Proyecto SPA con Login – Intensificación 2025
-Nombre de proyecto: Tito
+
+Nombre de proyecto: 
+Tito
+
 Descripción:
 Aplicación web tipo SPA (Single Page Application) con sistema de 
 registro, login, control de acceso y navegación dinámica sin recargar 
