@@ -1,17 +1,46 @@
 # Intensificasio-tito
-Proyecto SPA con Login – Intensificación 2025
 
-Nombre de proyecto: 
-Tito
+CookieTap — SPA con Login y Mini Juego Clicker
 
 Descripción:
-Aplicación web tipo SPA (Single Page Application) con sistema de 
-registro, login, control de acceso y navegación dinámica sin recargar 
-la página.
 
-Objetivo:
-Diseñar y desarrollar una SPA completa aplicando HTML, CSS y 
-JavaScript, utilizando localStorage para la gestión de usuarios y sesión.
+CookieTap es una aplicación web tipo SPA (Single Page Application) que incluye un sistema completo de registro, login y control de sesión
+
+El proyecto se desarrolla para la Intensificación 2025 de la materia Funcionamiento de los Sistemas Digitales, aplicando diseño responsivo, manejo de DOM, validaciones, almacenamiento local y control de pantallas dinámicas.
+
+Características principales:
+
+SPA sin recarga de página (HTML + CSS + JS)
+
+Sistema de Registro con validaciones:
+
+Email válido
+
+Usuario único
+
+Contraseña + confirmación
+
+Login con control de credenciales
+
+Manejo de sesión con localStorage
+
+Acceso restringido a la zona privada
+
+Pantalla de Logout y limpieza de sesión
+
+Diseño responsivo móvil/escritorio
+
+Prototipado completo hecho en Canva
+
+Diseño aplicado:
+
+Temática: cookies y repostería minimalista
+
+Paleta: beige, marrón y naranja suave
+
+Tipografía: Fredoka
+
+Componentes: botones, inputs limpios, estilo cálido
 
 Estructura del Repositorio
 /design
