@@ -1,14 +1,14 @@
 # Intensificasio-tito
 
-CookieTap — SPA con Login y Mini Juego Clicker
+CookieTap — SPA 
 
-Descripción:
+# Descripción:
 
-CookieTap es una aplicación web tipo SPA (Single Page Application) que incluye un sistema completo de registro, login y control de sesión
+CookieTap es una aplicación web tipo SPA (Single Page Application) desarrollada con HTML, CSS y JavaScript, que implementa un sistema completo de registro de usuarios, inicio de sesión, control de acceso y cierre de sesión, utilizando localStorage como almacenamiento local.
 
 El proyecto se desarrolla para la Intensificación 2025 de la materia Funcionamiento de los Sistemas Digitales, aplicando diseño responsivo, manejo de DOM, validaciones, almacenamiento local y control de pantallas dinámicas.
 
-Características principales:
+# Características principales:
 
 SPA sin recarga de página (HTML + CSS + JS)
 
@@ -42,13 +42,52 @@ Tipografía: Fredoka
 
 Componentes: botones, inputs limpios, estilo cálido
 
-Estructura del Repositorio
+# Funcionalidades actuales (Etapa 2)
+
+Pantalla de inicio (Home)
+
+Registro de usuarios con validaciones:
+
+Campos obligatorios
+
+Email válido
+
+Usuario único
+
+Contraseña mínima
+
+Confirmación de contraseña
+
+Inicio de sesión con usuario o email
+
+Control de sesión activa
+
+Acceso restringido a la sección privada
+
+Pantalla privada (panel interno)
+
+Cierre de sesión (logout)
+
+Navegación SPA sin recargar la página
+
+# Estructura del Repositorio
+/css
+  styles.css
+
+/js
+  app.js
+  auth.js
+  storage.js
+  ui.js
+
 /design
-    Documentación visual, mockups, paleta y prototipo.
+  prototipos
+  documentacion
 
- /docs
-    Archivos adicionales, notas o procesos.
+/docs
+  notas
 
+index.html
 README.md
     Información del proyecto.
 
