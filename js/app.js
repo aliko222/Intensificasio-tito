@@ -50,7 +50,11 @@ document.getElementById("registerForm").addEventListener("submit", (e) => {
   if (error) {
     showRegisterError(error);
   } else {
-    goLogin();
+    // Auto-login después de registro exitoso
+    loginUser(username, password);
+    const session = getSession();
+    updateWelcome(session.username);
+    showView("dashboard");
   }
 });
 document.getElementById("logoutBtn").addEventListener("click", () => {

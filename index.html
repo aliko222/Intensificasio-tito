@@ -12,89 +12,107 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-  <h1 class="logo">CookieTap 🍪</h1>
-</header>
-<main>
-  <section id="home" class="view">
-    <h2>Bienvenido a CookieTap</h2>
-    <p>Iniciá sesión o creá una cuenta para continuar.</p>
+  <!-- Galletas decorativas -->
+  <header class="header">
+    <div class="header-content">
+      <div class="cookie-logo">🍪</div>
+      <h1 class="logo">CookieTap</h1>
+    </div>
+  </header>
 
-    <button id="goLogin">Iniciar sesión</button>
-    <button id="goRegister" class="secondary">Crear cuenta</button>
-  </section>
+  <main>
+    <!-- Vista Home -->
+    <section id="home" class="view">
+      <div class="home-content">
+        <h2>CookieTap</h2>
+        <p>Iniciá sesión o creá una cuenta para continuar.</p>
+        <button id="goLogin">Iniciar Sesión</button>
+        <button id="goRegister">Registrarse</button>
+      </div>
+    </section>
+
+    <!-- Vista Login -->
     <section id="login" class="view hidden">
-    <h2>Iniciar sesión</h2>
+      <button class="back-button" id="backHomeFromLogin">Volver</button>
+      
+      <h2>Iniciar Sesión</h2>
 
-    <form id="loginForm">
-      <label>
-        Usuario o email
-        <input type="text" id="loginUser" required>
-      </label>
+      <form id="loginForm">
+        <div class="form-row">
+          <label for="loginUser">Usuario o Email</label>
+          <input type="text" id="loginUser" required>
+        </div>
 
-      <label>
-        Contraseña
-        <input type="password" id="loginPassword" required>
-      </label>
+        <div class="form-row">
+          <label for="loginPassword">Contraseña</label>
+          <input type="password" id="loginPassword" required>
+        </div>
 
-      <p class="error" id="loginError"></p>
+        <p class="error" id="loginError"></p>
 
-      <button type="submit">Entrar</button>
-    </form>
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
 
-    <button id="backHomeFromLogin" class="secondary">Volver</button>
-  </section>
-  <section id="register" class="view hidden">
-    <h2>Crear cuenta</h2>
+    <!-- Vista Registro -->
+    <section id="register" class="view hidden">
+      <button class="back-button" id="backHomeFromRegister">Volver</button>
+      
+      <h2>Crear cuenta</h2>
 
-    <form id="registerForm">
-      <label>
-        Nombre y apellido
-        <input type="text" id="regName" required>
-      </label>
+      <form id="registerForm">
+        <div class="form-row">
+          <label for="regName">Nombre y apellido</label>
+          <input type="text" id="regName" required>
+        </div>
 
-      <label>
-        Email
-        <input type="email" id="regEmail" required>
-      </label>
+        <div class="form-row">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" required>
+        </div>
 
-      <label>
-        Usuario
-        <input type="text" id="regUsername" required>
-      </label>
+        <p class="error" id="registerErrorEmail"></p>
 
-      <label>
-        Contraseña
-        <input type="password" id="regPassword" required>
-      </label>
+        <div class="form-row">
+          <label for="regUsername">Usuario</label>
+          <input type="text" id="regUsername" required>
+        </div>
 
-      <label>
-        Confirmar contraseña
-        <input type="password" id="regPasswordConfirm" required>
-      </label>
+        <div class="form-row">
+          <label for="regPassword">Contraseña</label>
+          <input type="password" id="regPassword" required>
+        </div>
 
-      <p class="error" id="registerError"></p>
+        <div class="form-row">
+          <label for="regPasswordConfirm">Repita la contraseña</label>
+          <input type="password" id="regPasswordConfirm" required>
+        </div>
 
-      <button type="submit">Registrarse</button>
-    </form>
+        <p class="error" id="registerError"></p>
 
-    <button id="backHomeFromRegister" class="secondary">Volver</button>
-  </section>
-   <section id="dashboard" class="view hidden">
-    <h2 id="welcomeText">Hola 👋</h2>
+        <button type="submit">Crear Cuenta</button>
+      </form>
+    </section>
 
-    <p>Este espacio está reservado para futuras funcionalidades.</p>
+    <!-- Vista Dashboard -->
+    <section id="dashboard" class="view hidden">
+      <h2 id="welcomeText">Hola 👋</h2>
 
-    <button id="logoutBtn">Cerrar sesión</button>
-  </section>
-   <section id="logout" class="view hidden">
-    <h2>Sesión cerrada</h2>
-    <p>Gracias por usar CookieTap.</p>
+      <p>Este espacio está reservado para futuras funcionalidades.</p>
 
-    <button id="backHomeFromLogout">Volver al inicio</button>
-  </section>
-</main>
-<script src="js/storage.js"></script>
+      <button id="logoutBtn">Cerrar sesión</button>
+    </section>
+
+    <!-- Vista Logout -->
+    <section id="logout" class="view hidden">
+      <h2>Sesión cerrada</h2>
+      <p>Gracias por usar CookieTap.</p>
+
+      <button id="backHomeFromLogout">Volver al inicio</button>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
   <script src="js/auth.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/app.js"></script>

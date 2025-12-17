@@ -1,95 +1,115 @@
-# Intensificasio-tito
+# 🍪 CookieTap
 
-CookieTap — SPA 
+**CookieTap** es una aplicación web interactiva que permite a los usuarios crear cuentas, iniciar sesión y acceder a su espacio personal de manera segura. Diseñada con una interfaz amigable y un estilo visual cálido inspirado en galletas y repostería.
 
-# Descripción:
+## ✨ Características
 
-CookieTap es una aplicación web tipo SPA (Single Page Application) desarrollada con HTML, CSS y JavaScript, que implementa un sistema completo de registro de usuarios, inicio de sesión, control de acceso y cierre de sesión, utilizando localStorage como almacenamiento local.
+- **🔐 Sistema de autenticación completo**
+  - Registro de usuarios con validación de datos
+  - Inicio de sesión seguro con usuario o email
+  - Control de sesiones persistente
+  
+- **📱 Diseño responsivo**
+  - Optimizado para dispositivos móviles y escritorio
+  - Interfaz adaptativa que se ajusta a cualquier pantalla
+  
+- **🎨 Experiencia visual única**
+  - Paleta de colores cálida (beige, marrón y naranja)
+  - Decoraciones temáticas con galletas
+  - Tipografía amigable (Fredoka)
+  
+- **⚡ Navegación fluida**
+  - Single Page Application (SPA) sin recargas
+  - Transiciones suaves entre vistas
+  - Feedback inmediato en todas las acciones
 
-El proyecto se desarrolla para la Intensificación 2025 de la materia Funcionamiento de los Sistemas Digitales, aplicando diseño responsivo, manejo de DOM, validaciones, almacenamiento local y control de pantallas dinámicas.
+## 🚀 Instalación
 
-# Características principales:
+1. Clona este repositorio:
+```bash
+git clone https://github.com/aliko222/Intensificasio-tito.git
+```
 
-SPA sin recarga de página (HTML + CSS + JS)
+2. Abre el archivo `index.html` en tu navegador:
+```bash
+cd cookietap
+open index.html
+```
 
-Sistema de Registro con validaciones:
+¡Eso es todo! No requiere instalación de dependencias ni servidor backend.
 
-Email válido
+## 💻 Uso
 
-Usuario único
+### Crear una cuenta
+1. Haz clic en "Registrarse"
+2. Completa el formulario con:
+   - Nombre y apellido
+   - Email válido
+   - Usuario único
+   - Contraseña (mínimo 6 caracteres)
+   - Confirmación de contraseña
+3. Al registrarte exitosamente, serás llevado automáticamente a tu espacio personal
 
-Contraseña + confirmación
+### Iniciar sesión
+1. Haz clic en "Iniciar Sesión"
+2. Ingresa tu usuario o email
+3. Ingresa tu contraseña
+4. Accede a tu panel personal
 
-Login con control de credenciales
+### Cerrar sesión
+- Haz clic en "Cerrar sesión" desde tu panel
+- Tu sesión se cerrará de forma segura
 
-Manejo de sesión con localStorage
+## 🛠️ Tecnologías utilizadas
 
-Acceso restringido a la zona privada
+- **HTML5** - Estructura semántica
+- **CSS3** - Estilos y diseño responsivo
+- **JavaScript (Vanilla)** - Lógica de la aplicación
+- **LocalStorage** - Almacenamiento local de datos
 
-Pantalla de Logout y limpieza de sesión
+## 📁 Estructura del proyecto
 
-Diseño responsivo móvil/escritorio
+```
+cookietap/
+│
+├── index.html          # Página principal
+├── css/
+│   └── styles.css      # Estilos de la aplicación
+├── js/
+│   ├── app.js          # Lógica principal y eventos
+│   ├── auth.js         # Sistema de autenticación
+│   ├── storage.js      # Gestión de localStorage
+│   └── ui.js           # Control de interfaz y vistas
+├── design/             # Prototipos y documentación visual
+└── README.md           # Este archivo
+```
 
-Prototipado completo hecho en Canva
+## 🔒 Seguridad
 
-Diseño aplicado:
+**Nota importante:** CookieTap es una aplicación de demostración que almacena datos localmente en el navegador. Para uso en producción, se recomienda:
+- Implementar un backend seguro
+- Usar hashing de contraseñas (bcrypt, argon2)
+- Implementar autenticación con tokens (JWT)
+- Usar HTTPS
+- Agregar validación del lado del servidor
 
-Temática: cookies y repostería minimalista
+## 🎯 Próximas funcionalidades
 
-Paleta: beige, marrón y naranja suave
+- [ ] Recuperación de contraseña
+- [ ] Perfil de usuario editable
+- [ ] Modo oscuro
 
-Tipografía: Fredoka
 
-Componentes: botones, inputs limpios, estilo cálido
 
-# Funcionalidades actuales (Etapa 2)
 
-Pantalla de inicio (Home)
+## 📄 Licencia
 
-Registro de usuarios con validaciones:
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
-Campos obligatorios
+## 👤 Autor
 
-Email válido
+**Tomás Zapata**
 
-Usuario único
+---
 
-Contraseña mínima
-
-Confirmación de contraseña
-
-Inicio de sesión con usuario o email
-
-Control de sesión activa
-
-Acceso restringido a la sección privada
-
-Pantalla privada (panel interno)
-
-Cierre de sesión (logout)
-
-Navegación SPA sin recargar la página
-
-# Estructura del Repositorio
-/css
-  styles.css
-
-/js
-  app.js
-  auth.js
-  storage.js
-  ui.js
-
-/design
-  prototipos
-  documentacion
-
-/docs
-  notas
-
-index.html
-README.md
-    Información del proyecto.
-
-Integrantes:
-Tomás Zapata
+⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!
