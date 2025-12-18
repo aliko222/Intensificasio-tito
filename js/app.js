@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (session && session.isLogged) {
     updateWelcome(session.username);
     showView("dashboard");
+    initTasksSystem(); // Inicializar sistema de tareas
   } else {
     showView("home");
   }
@@ -28,6 +29,7 @@ document.getElementById("loginForm").addEventListener("submit", (e) => {
     const session = getSession();
     updateWelcome(session.username);
     showView("dashboard");
+    initTasksSystem(); // Inicializar sistema de tareas
   }
 });
 document.getElementById("registerForm").addEventListener("submit", (e) => {
@@ -55,6 +57,7 @@ document.getElementById("registerForm").addEventListener("submit", (e) => {
     const session = getSession();
     updateWelcome(session.username);
     showView("dashboard");
+    initTasksSystem(); // Inicializar sistema de tareas
   }
 });
 document.getElementById("logoutBtn").addEventListener("click", () => {
